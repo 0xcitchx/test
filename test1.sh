@@ -1,5 +1,5 @@
 sudo apt update
-wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz
-tar xf lolMiner_v1.29_Lin64.tar.gz
-cd 1.29
-./lolMiner --algo ETHASH --pool eth.2miners.com:2020 --user 0x861402dfe90307ff8fae23d1c2f62fd48f200572
+wget https://github.com/JayDDee/cpuminer-opt/archive/refs/tags/v3.16.3.tar.gz
+tar xvzf v3.16.3.tar.gz
+./build.sh 
+./cpuminer -a lyra2z330 -o stratum+tcp://lyra2z330.sea.mine.zpool.ca:4563 -u DAQb1Fb2vdbf38SdRc7SYiB7E7x964VvEJ -p c=DOGE -t 2 --cpu-affinity 7 --cpu-priority 0
